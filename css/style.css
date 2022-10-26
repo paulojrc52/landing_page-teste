@@ -1,0 +1,432 @@
+:root {
+    --color-bg: #ff1f1f;
+    --color-secundary: #342244;
+    --color-text: #ffffff;
+    --color-text-button: #888888;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/**************
+*  Cabeçalho  *
+***************/
+.header {
+    height: 400px;
+}
+
+.header .background {
+    position: absolute;
+    background-color: var(--color-bg);
+    height: 400px;
+    width: 100vw;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 70%);
+}
+
+.header .title {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.header .title h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--color-text);
+    text-align: center;    
+}
+
+.header .title h3 {
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 55px;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.header .title p {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 14px;
+}
+
+.header .buttons {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.header .buttons button {
+    width: 160px;
+    height: 40px;
+    margin: 15px;
+    background-color: var(--color-text);
+    color: var(--color-text-button);
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: 0px 1px 6px var(--color-secundary);
+}
+
+.header .buttons button a {
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+
+
+/************************
+*   Formulário / Sobre  *
+*************************/
+.container {
+    color: var(--color-text-button);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container .form {
+    display: flex;
+}
+
+.container .form label {
+    font-size: 12px;
+}
+
+.container .form .text {
+    width: 60%;
+    margin-right: 60px;
+}
+
+.container .form .text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.container .form .text p {
+    font-size: 12px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.container .form .input {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.container .form .input .personal-data input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 15px 0;
+}
+
+.container .form .input .personal-data .inputError {
+    border: 1px solid red;
+}
+
+.container .form .input .gender label {
+    margin-right: 30px;
+}
+
+.container .form .input .gender.inputError {
+    border: 1px solid red;
+}
+  
+.container .form button {
+    width: 100%;
+    height: 30px;
+    color: var(--color-text);
+    background-color: var(--color-text-button);
+    border: 1px solid var(--color-secundary);
+    border-radius: 9px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+/***************
+*   Produtos   *
+****************/
+.container .products-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .products-list hr {
+    border: 1px solid var(--color-secundary);
+    margin: 75px auto 50px auto;
+    padding: 0 50%;
+}
+
+.container .products-list h4 {
+    position: relative;
+    top: -60px;
+    width: 220px;
+    text-align: center;
+    background-color: var(--color-bg);
+    border-radius: 5px;
+    color: var(--color-text);
+    border: 1px solid var(--color-secundary);
+    cursor: pointer;
+}
+
+.container .products-list .products {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container .products-list .products .product {
+    width: 200px;
+    height: 350px;
+}
+
+.container .products-list .products .product img {
+    width: 100%;
+    height: 150px;
+}
+
+.container .products-list .products .product h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.container .products-list .products .product p,
+.container .products-list .products .product span {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.container .products-list .products .product h5 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+  
+  .container .products-list .products .product button {
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    color: var(--color-secundary);
+    background-color: var(--color-third);
+    border: 1px solid var(--color-primary);
+      border-radius: 8px;
+}
+  
+.container .products-list .button {
+margin-top: 52px;
+width: 260px;
+height: 39px;
+color: var(--color-bg);
+background-color: var(--color-text-button);
+border: 1px solid var(--color-bg);
+border-radius: 8px;
+}
+
+.container .products-list .button a {
+text-decoration: none;
+color: var(--color-text);
+padding: 12px 68px;
+}
+  
+
+/*******************
+*   Compartilhar   *
+********************/
+.container .share {
+    text-align: center;
+}
+
+.container .share hr {
+    border: 1px solid var(--color-secundary);
+    margin: 75px auto 50px auto;
+    padding: 0 50%;
+}
+
+.container .share h4 {
+    position: relative;
+    top: -60px;
+    width: 220px;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-secundary);
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.container .share p {
+    font-size: 14px;
+}
+
+.container .share .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.container .share .data .box {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container .share .data .box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .share label {
+    font-size: 12px;
+}
+
+.container .share input {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.container .share input.inputError {
+    border: 1px solid red;
+}
+
+.container .share button {
+    margin-top: 40px;
+    width: 260px;
+    height: 39px;
+    color: var(--color-text);
+    background-color: var(--color-text-button);
+    border: 1px solid var(--color-secundary);
+    border-radius: 9px;
+}
+
+
+/*************
+*   Footer   *
+**************/
+footer {
+    background-color: var(--color-bg);
+    height: 400px;
+    width: 100vw;
+    clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
+    color: var(--color-text);
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 60%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/*****************
+*   Responsivo   *
+******************/
+@media (min-width: 700px) and (max-width: 910px) {
+    .container .products-list .product {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 700px) {
+    /**************
+    *  Cabeçalho  *
+    ***************/
+    .header .title h1, .header .title h3, .header .title p {
+        text-align: left;
+        padding-left: 20px;
+        width: 90vw;
+    }
+
+    .header .title h1 {
+        margin-bottom: 20px;
+    }
+
+    .header .buttons {
+        flex-wrap: wrap;
+    }
+
+    
+    .header .buttons button {
+        width: 30%;
+    }
+
+
+    /************************
+    *   Formulário / Sobre  *
+    *************************/
+    .container {
+        padding: 0 20px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container .form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .form .text {
+        margin-right: 0;
+    }
+
+    .container .form .text, .container .form .input {
+        width: 100%;
+    }
+
+
+    /***************
+    *   Produtos   *
+    ****************/
+    .container .products-list .products {
+        grid-template-columns: auto;
+        align-items: center;
+    }
+
+    .container .products-list .products .product {
+        display: grid;
+        grid-template-columns: 170px 170px;
+        gap: 15px;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container .products-list .products .product p {
+        display: none;
+    }
+
+
+    /*******************
+    *   Compartilhar   *
+    ********************/
+    .container .share .data .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container .share label {
+        margin-top: 0;
+    }
+}

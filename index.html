@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Linx</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="header">
+        <div class="background"></div>
+        <div class="title">
+            <h3>Uma seleção de produtos</h3>
+            <h1>Especial para você</h1>
+            <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+        </div>
+        <div class="buttons">
+            <button><a href="#">Conheça a Linx</a></button>
+            <button><a href="#">Ajude o algorítimo</a></button>
+            <button><a href="#">Seus produtos</a></button>
+            <button><a href="#">Compartilhe</a></button>
+        </div>
+    </header>
+
+    <div class="container">
+       <!--Sobre-->
+        <div class="form">
+
+            <div class="text">
+
+                <h2>Ajude o algorítimo ser mais assertivo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint rem officia laborum tenetur eaque incidunt dicta asperiores, vel quia exercitationem perspiciatis consectetur modi totam ullam adipisci quaerat voluptate esse!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum obcaecati distinctio atque nisi vitae quibusdam repellendus, aut, facere dicta exercitationem, perferendis sint itaque laudantium soluta ab illum in porro! Nisi?
+                </p>
+
+            </div>
+
+            <div class="input">
+                 <!--Formulário-->
+                <form id="formUser">
+                    <div class="personal-data">
+                        <label>Seu nome</label>
+                        <input type="text" name="name" placeholder="Digite seu nome">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Digite seu email">
+                        <label>CPF</label>
+                        <input type="text" name="CPF" pattern="[0-9]{11}" title="Digite um CPF válido" placeholder="Digite um CPF válido">
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" name="gender" value="masculino">
+                        <label>Masculino</label>
+                        <input type="radio" name="gender" value="feminino">
+                        <label>Feminino</label>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+
+            </div>
+        </div>
+        <!--Lista de produtos-->
+        <div class="products-list">
+            <hr>
+            <h4>Sua seleção especial</h4>
+            <div class="products"></div>
+            <button class="button" id="button">
+                <a id="nextProducts" href="">Mais produtos</a>
+            </button>
+        </div>
+        <!--Compartilhar-->
+        <div class="share">
+            <hr>
+            <h4>Compartilhe a novidade</h4>
+            <p>Quer que seus amigos também ganhem a lista personalizada deles ? Preencha agora!</p>
+            <form class="data" id="formFriend">
+                <div class="box">
+
+                    <div>
+                        <label>Nome do seu amigo</label>
+                        <input type="text" name="friendName">
+                    </div>
+
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" name="friendEmail">
+                    </div>
+                </div>
+
+                <button type="submit">Enviar agora</button>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p>Treinando habilidades HTML, CSS e JavaScript.</p>
+        <p>&copy; Paulo Júnior</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 :root {
-    --color-bg: #ff1f1f;
+    --color-bg: #ff0000;
     --color-secundary: #342244;
     --color-text: #ffffff;
     --color-text-button: #888888;
@@ -36,9 +36,10 @@
 
 .header .title h1 {
     font-size: 40px;
-    margin-bottom: 30px;
-    color: var(--color-text);
+    margin-bottom: 25px;
+    color: yellow;
     text-align: center;    
+  
 }
 
 .header .title h3 {
@@ -50,6 +51,7 @@
 }
 
 .header .title p {
+    font-weight: 400;
     color: var(--color-text);
     text-align: center;
     font-size: 14px;
@@ -68,17 +70,16 @@
     width: 160px;
     height: 40px;
     margin: 15px;
-    background-color: var(--color-text);
-    color: var(--color-text-button);
-    border: 1px solid var(--color-text);
-    border-radius: 4px;
+    background-color: var(--color-text-button);
+    border: 1px solid var(--color-secundary);
+    border-radius: 10px;
     font-size: 15px;
-    box-shadow: 0px 1px 6px var(--color-secundary);
+    box-shadow: 5px 4px 10px var(--color-secundary);
 }
 
 .header .buttons button a {
     text-decoration: none;
-    color: var(--color-secundary);
+    color: var(--color-text);
 }
 
 
@@ -228,15 +229,14 @@
 margin-top: 52px;
 width: 260px;
 height: 39px;
-color: var(--color-bg);
 background-color: var(--color-text-button);
-border: 1px solid var(--color-bg);
+border: 1px solid yellow;
 border-radius: 8px;
 }
 
 .container .products-list .button a {
 text-decoration: none;
-color: var(--color-text);
+color: yellow;
 padding: 12px 68px;
 }
   
@@ -330,13 +330,21 @@ footer {
     text-align: center;
 }
 
+footer a {
+    position: relative;
+    top: 60%;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 footer p {
     position: relative;
     top: 60%;
     font-size: 15px;
     cursor: pointer;
 }
-
 
 /*****************
 *   Responsivo   *

@@ -133,6 +133,23 @@
     border: 1px solid red;
 }
 
+.toast{
+    display: inline-block;
+    position: absolute;
+    left: -300%;
+    bottom: -1000px;
+    background: rgb(255, 235, 230);
+    border: 1px solid rgb(250, 43, 15);
+    border-radius: 6px;
+    padding: 15px;
+    color: red;
+    transition: all 600ms ease;
+}
+
+.toast.visible{
+    left: 30px;
+}
+
 .container .form .input .gender label {
     margin-right: 30px;
 }
